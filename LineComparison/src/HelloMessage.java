@@ -14,13 +14,17 @@ public class HelloMessage {
 		int y22 = obj1.nextInt();
 		double length1 = Math.sqrt(Math.pow(x12-x11,2) + Math.pow(y12-y11,2));
 		double length2 = Math.sqrt(Math.pow(x22-x21,2) + Math.pow(y22-y21,2));
-		if (length1 == length2)
+		if (length1 > length2)
 		{
-			System.out.println("The two lines are equal");
+			System.out.println("The first line is greater");
+		}
+		else if (length2 > length1)
+		{
+			System.out.println("The second line is greater");
 		}
 		else
 		{
-			System.out.println("The two lines are not equal");
+			System.out.println("Both lines are equal");
 		}
 	}
 }
