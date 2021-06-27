@@ -1,5 +1,6 @@
 import java.util.Scanner;
 public class HelloMessage {
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		System.out.println("Enter x and y coordinates of first line");
 		Scanner obj1 = new Scanner(System.in);
